@@ -10078,15 +10078,14 @@ import java.util.Arrays;
 
 //
 
-public class Rough {
-   public   static void main(String[] args) {
-        System.out.println("onkar");
-    }
-}
-
-
-
-
+//public class Rough {
+//   public   static void main(String[] args) {
+//        System.out.println("onkar");
+//    }
+//}
+//
+//
+//
 
 
 
