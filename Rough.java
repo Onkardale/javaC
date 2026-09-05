@@ -10103,7 +10103,7 @@ import java.util.Arrays;
 //public class Rough {
 //    public static  void main(String[] args){
 //
-//        String text = "public  l ocate where is am 'loca te' ok ";
+//        String text = "public  locate where is am 'loca te' ok ";
 //        System.out.println(text.indexOf("locate"));
 //
 //
