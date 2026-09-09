@@ -9344,7 +9344,9 @@ ____ _ ____
 //}
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /// delete element of an array
 //public class Rough {
@@ -10139,12 +10141,78 @@ import java.util.Arrays;
 //}
 //
 //
+//
+//public class Rough {
+//
+//    public static void main(String[] args) {
+//
+//
+//        System.out.println(isF(5));
+//
+//    }
+//
+//    public static int isF(int n) {
+//
+//        if (n == 0 || n == 1) {
+//            return n;
+//        }
+//        return n * isF(n - 1);
+//
+//
+//    }
+//}
+//
+//
+//
+//public class Rough {
+//    public static void main(){
+//
+//
+//int[] arr = {1,1,2};
+//
+//
+//        System.out.println(isDuplicate(arr));
+//
+//
+//    }
+//    public static int isDuplicate(int[] nums){
+//
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            boolean isDuplicate = false;
+//            for (int j = i + 1; j < nums.length; j++) {
+//                if (nums[i] == nums[j]){
+//                    isDuplicate = true;
+//                }
+//            }
+//            if (!isDuplicate){
+//                return nums[i];
+//            }
+//        }
+//        return -1;
+//
+//    }
+//}
+//
+//
+//
+//
 
 
+public class Rough {
+    public static void main(String[] args) {
 
+        int[]  arr = {1,2,3,1,2,4};
 
+        List<Integer> result = new ArrayList<>();
 
+        for (int i = 0; i < arr.length; i++) {
 
+             if(!result.contains(arr[i])){
+                 result.add(arr[i]);
+             }
+        }
+        System.out.println(result);
 
-
-
+    }
+}
