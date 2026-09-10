@@ -121,7 +121,7 @@ package NUMBERS;
 //        double x = 0.0;
 //        int y = 10;
 //        System.out.println();
-// 
+//
 //    }
 //}
  //       2D- ARRAY       //
@@ -9346,6 +9346,7 @@ ____ _ ____
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /// delete element of an array
@@ -10198,40 +10199,190 @@ import java.util.List;
 //
 //
 
-import java.util.*;
+//
+//public class Rough {
+//    public static void main(String[] args) {
+//
+//        int[]  arr = {1,2,3,1,2,4};
+//
+//        List<Integer> result = new ArrayList<>();
+//
+//        for (int i = 0; i < arr.length; i++) {
+//
+//             if(!result.contains(arr[i])){
+//                 result.add(arr[i]);
+//             }
+//        }
+//        System.out.println(result);
+//
+//    }
+//}
+
+
+//
+//
+//public class Rough {
+//    static void main() {
+//
+//
+//
+//        int[] arr = {3,4,2,1,5};
+//
+//        for (int i = 0; i <arr.length-1 ; i++) {
+//            for (int j = i+1; j < arr.length-1; j++) {
+//                if (arr[i] > arr[j]){
+//                    int temp = arr[i];
+//                    arr[i] = arr[j];
+//                    arr[j] = temp;
+//
+//                }
+//            }
+//        }
+//
+//
+//        for(int num: arr){
+//            System.out.println(num);
+//        }
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i]);
+//        }
+//
+
+
+//
+//    }
+//}
+
+
+
+
+//
+//public class Rough {
+//    public static void main(String[] args){
+//
+//        //System.out.println(args.length);
+//
+//
+//
+//
+//
+//        int[] arr ={1,2,3,4,5,6};
+//
+//        int arrEvenElementAddition = 0;
+//        int arrOddElementAddition = 0;
+//
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            if (i == 0){
+//                arrEvenElementAddition += arr[i];
+//            } else if (i % 2 ==0) {
+//                arrEvenElementAddition += arr[i];
+//
+//            }else {
+//                arrOddElementAddition = arr[i];
+//            }
+//        }
+//        System.out.println(arrEvenElementAddition);
+//        System.out.println(arrOddElementAddition);
+//
+//
+//    }
+//}
+//
+//
+//
+//
+//
+ /// accenture campus ask question
+//public class Rough {
+//    public static void main(String[] args) {
+//
+//        int[] arr = {2, 1, 4, 3, 6, 5};
+//
+//        int count = 0;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//
+//            if (i % 2 == 0 && arr[i] % 2 == 0) {
+//                count++;
+//            }
+//            else if (i % 2 != 0 && arr[i] % 2 != 0) {
+//                count++;
+//            }
+//        }
+//
+//        System.out.println("Total count: " + count);
+//    }
+//}
+
+
+
+//
+//public class Rough {
+//    public static void main(String[] args){
+//
+//
+//
+//
+//        List<Integer>  list = new ArrayList<>();
+//        list.add(12);
+//        list.add(23);
+//        list.add(33);
+//        System.out.println(list);
+//
+//        list.stream()
+//                .filter(l -> l >= 24)
+//                .forEach(System.out::println);
+//
+//
+//
+//
+//
+//
+//    }
+//}
+//
+//
+//
+//
+//
 
 public class Rough {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        int[]  arr = {1,2,3,1,2,4};
 
-        List<Integer> result = new ArrayList<>();
 
-        for (int i = 0; i < arr.length; i++) {
+        List<Integer> integers = new ArrayList<>();
 
-             if(!result.contains(arr[i])){
-                 result.add(arr[i]);
-             }
-        }
-        System.out.println(result);
+        integers.add(13);
+        integers.add(9);
+        integers.add(12);
+        integers.add(3);
+
+
+        Collections.sort(integers,Collections.reverseOrder());
+        System.out.println(integers);
+        Collections.sort(integers);
+        System.out.println(integers);;
+
+        integers.stream()
+                .filter(l -> l == 2)
+                .forEach(System.out::println);
+
+
+         //        integers.stream()
+
+
+// int sum = 0;
+
+//        for (int num : integers){
+//            System.out.println(num);
+//        }
+
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
